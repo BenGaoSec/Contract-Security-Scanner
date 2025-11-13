@@ -1,0 +1,33 @@
+{
+  "name": "solidity-guardian",
+  "version": "1.0.0",
+  "description": "A lightweight static analyzer for Solidity",
+  "main": "index.js",
+  "type": "commonjs",
+
+  "scripts": {
+    "scan": "ts-node src/cli/main.ts",
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint 'src/**/*.ts'",
+    "format": "prettier --write 'src/**/*.ts'"
+  },
+
+  "keywords": [],
+  "author": "Ben",
+  "license": "ISC",
+
+  "devDependencies": {
+    "solidity-parser-antlr": "^0.4.11",
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2",
+    "@types/node": "^20.11.7",
+    "glob": "^10.3.10",
+    "chalk": "^5.3.0",
+    "eslint": "^8.57.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "prettier": "^3.2.5",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3"
+  }
+}
